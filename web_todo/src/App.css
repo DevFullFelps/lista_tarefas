@@ -1,0 +1,12 @@
+*{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+
+.main-container {
+  flex: 1;
+  background: linear-gradient(to bottom, #60BF81, #93D94E);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

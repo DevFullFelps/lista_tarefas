@@ -1,0 +1,8 @@
+footer{
+    background: linear-gradient(to bottom, #93D94E,#60BF81,#3B8C66,#367356,#223240);
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    align-items: center;
+}

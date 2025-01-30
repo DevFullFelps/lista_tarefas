@@ -1,0 +1,69 @@
+/* Navbar principal */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background: linear-gradient(to bottom, #223240, #3B8C66);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Área da logo e título */
+.area-imagem {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Ajustei para não ficar muito espaçado */
+}
+
+/* Imagem da logo */
+.area-imagem .navbar-imagem {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* Estilização do título */
+.navbar h3 {
+    font-size: 24px;
+    color: #93D94E;
+    font-weight: bold;
+}
+
+/* Lista de ícones sociais */
+.social-links ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilização dos ícones */
+.icon-link {
+    color: #93D94E;
+    font-size: 24px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+.icon-link:hover {
+    transform: scale(1.1);
+    color: #ccf5fe;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 50px;
+    }
+
+    .area-imagem {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-links ul {
+        margin-top: 10px;
+    }
+}
