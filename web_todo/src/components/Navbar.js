@@ -1,4 +1,5 @@
 import './styles/Navbar.css';
+import { Link } from "react-router-dom";
 import { FaLinkedin, FaInstagram, FaGithub  } from 'react-icons/fa';
 
 
@@ -43,7 +44,10 @@ const Navbar = () =>{
                     </li>
                 </ul>
             </div>
+            
         </nav>
+        
+
     )
 }
 

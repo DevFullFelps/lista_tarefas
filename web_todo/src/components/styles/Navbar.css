@@ -1,69 +1,53 @@
-/* Navbar principal */
-.navbar {
+.navbar{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;   
     align-items: center;
-    padding: 20px 100px;
-    background: linear-gradient(to bottom, #223240, #3B8C66);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 50px 200px 00px 200px;
+    background: linear-gradient(to bottom, #223240,#3B8C66);
+    margin: 0;
 }
 
-/* Área da logo e título */
-.area-imagem {
+.navbar h3{
+    font-size: 24px;
+    color: #93D94E;
+    cursor: auto;
+}
+
+.area-imagem{
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
-    gap: 20px; /* Ajustei para não ficar muito espaçado */
+    gap:100px
 }
 
-/* Imagem da logo */
-.area-imagem .navbar-imagem {
-    width: 60px;
-    height: 60px;
+.area-imagem .navbar-imagem{
+    width: 80px;
+    height: auto;
     border-radius: 50%;
 }
 
-/* Estilização do título */
-.navbar h3 {
-    font-size: 24px;
-    color: #93D94E;
-    font-weight: bold;
-}
-
-/* Lista de ícones sociais */
-.social-links ul {
+.social-links ul{
     display: flex;
-    gap: 15px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
     list-style: none;
-    padding: 0;
+    font-size: 25px;
+
 }
 
-/* Estilização dos ícones */
-.icon-link {
+.social-links ul .icon-link{
+    text-decoration: none;
     color: #93D94E;
-    font-size: 24px;
-    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+    transition: all 0.4s ease;
 }
 
-/* Efeito ao passar o mouse */
-.icon-link:hover {
-    transform: scale(1.1);
+.social-links ul .icon-link:hover{
+    font-size: 27px;
     color: #ccf5fe;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 50px;
-    }
-
-    .area-imagem {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .social-links ul {
-        margin-top: 10px;
-    }
 }
