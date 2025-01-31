@@ -15,14 +15,13 @@ const Todo = () => {
     useEffect(() => {
         onValue(tasksRef, (snapshot) => {
             const data = snapshot.val();
-            console.log("Dados carregados do Firebase:", data); // Log dos dados
             if (data) {
                 setTasks(data);
             } else {
                 setTasks({});
             }
         });
-    }, );
+    }, []); 
 
     // Função para adicionar uma nova tarefa
     const addTask = () => {

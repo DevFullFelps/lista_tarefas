@@ -13,7 +13,7 @@ const Main = () => {
                     <Link to="/todo" className="button-create">Crie sua Lista</Link> 
                 </div>
                 <div className="image-section">
-                    <img src="./pages/Todo.js" alt="Imagem-tela" className="imagem-demo" />
+                    <img src="./img/fundo.png" alt="Imagem-tela" className="imagem-demo" />
                 </div>
             </div>
         </main>

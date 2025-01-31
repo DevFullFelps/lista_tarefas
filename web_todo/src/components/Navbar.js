@@ -7,12 +7,12 @@ const Navbar = () =>{
     return(
         <nav className='navbar'>
             <div className='area-imagem'>
-                <img src='./img/navbar/dev_logo.png' alt='logo' className='navbar-imagem'></img>
-                <h3>To Do List</h3>
+                <img src='./img/logo.jpeg' alt='logo' className='navbar-imagem'></img>
+                <h3>Lista de Tarefas</h3>
             </div>
             <div className='social-links'>
-                <ul>
-                    <li>
+                <ul className='ul-nav'>
+                    <li className='li-nav'>
                         <a
                         href='https://github.com/DevFullFelps'
                         target='_blank'
@@ -22,7 +22,7 @@ const Navbar = () =>{
                         <FaGithub />
                         </a>
                     </li>
-                    <li>
+                    <li className='li-nav'>
                         <a
                         href='https://www.instagram.com/devfelps/'
                         target='_blank'
@@ -32,7 +32,7 @@ const Navbar = () =>{
                         <FaInstagram />
                         </a>
                     </li>
-                    <li>
+                    <li className='li-nav'>
                         <a
                         href='https://www.linkedin.com/in/felipe-adriano-967b89312'
                         target='_blank'

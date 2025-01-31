@@ -1,35 +1,36 @@
-.navbar{
+/* Estilos gerais */
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;   
+    flex-wrap: nowrap;
     align-items: center;
-    padding: 50px 200px 00px 200px;
-    background: linear-gradient(to bottom, #223240,#3B8C66);
+    padding: 50px 200px 0 200px;
+    background: linear-gradient(to bottom, #223240, #3B8C66);
     margin: 0;
 }
 
-.navbar h3{
+.navbar h3 {
     font-size: 24px;
     color: #93D94E;
     cursor: auto;
 }
 
-.area-imagem{
+.area-imagem {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    gap:100px
+    gap: 100px;
 }
 
-.area-imagem .navbar-imagem{
+.area-imagem .navbar-imagem {
     width: 80px;
     height: auto;
     border-radius: 50%;
 }
 
-.social-links ul{
+.social-links .ul-nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -37,17 +38,112 @@
     gap: 20px;
     list-style: none;
     font-size: 25px;
-
 }
 
-.social-links ul .icon-link{
+.social-links .ul-nav .icon-link {
     text-decoration: none;
     color: #93D94E;
     cursor: pointer;
     transition: all 0.4s ease;
+    padding-top: 6px;
 }
 
-.social-links ul .icon-link:hover{
+.social-links .ul-nav .icon-link:hover {
     font-size: 27px;
-    color: #ccf5fe;
+    color: #2C5650;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 50px 100px 0 100px;
+    }
+
+    .area-imagem {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 30px 50px 0 50px;
+    }
+
+    .navbar h3 {
+        font-size: 20px;
+    }
+
+    .area-imagem {
+        gap: 30px;
+    }
+
+    .area-imagem .navbar-imagem {
+        width: 60px;
+    }
+
+    .social-links .ul-nav {
+        font-size: 20px;
+        gap: 15px;
+    }
+
+    .social-links .ul-nav .icon-link:hover {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 20px 20px 0 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar h3 {
+        font-size: 18px;
+    }
+
+    .area-imagem {
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    .area-imagem .navbar-imagem {
+        width: 50px;
+    }
+
+    .social-links .ul-nav {
+        font-size: 18px;
+        gap: 10px;
+    }
+
+    .social-links .ul-nav .icon-link:hover {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 300px) {
+    .navbar {
+        padding: 10px 10px 0 10px;
+    }
+
+    .navbar h3 {
+        font-size: 16px;
+    }
+
+    .area-imagem {
+        gap: 10px;
+    }
+
+    .area-imagem .navbar-imagem {
+        width: 40px;
+    }
+
+    .social-links .ul-nav {
+        font-size: 16px;
+        gap: 8px;
+    }
+
+    .social-links .ul-nav .icon-link:hover {
+        font-size: 18px;
+    }
 }
