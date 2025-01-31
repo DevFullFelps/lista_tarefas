@@ -61,12 +61,15 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center; /* Centraliza a imagem verticalmente */
+    max-width: 100%; /* Garante que a seção não ultrapasse a largura do container */
 }
 
 .imagem-demo {
-    max-width: 500px;
-    height: auto;
+    max-width: 100%; /* A imagem não ultrapassa a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
     border-radius: 10px;
+    width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
 }
 
 /* Responsividade */
@@ -78,6 +81,7 @@
 
     .image-section {
         margin-top: 20px;
+        width: 100%; /* Ocupa 100% da largura */
     }
 
     .text-section {
@@ -98,6 +102,7 @@
 
     .image-section {
         margin-top: 20px;
+        width: 100%; /* Ocupa 100% da largura */
     }
 
     .text-section {
@@ -123,6 +128,7 @@
 
     .image-section {
         margin-top: 20px;
+        width: 100%; /* Ocupa 100% da largura */
     }
 
     .text-section {
@@ -157,6 +163,11 @@
     .button-create {
         padding: 10px 15px; /* Reduz o padding do botão */
         font-size: 14px; /* Reduz o tamanho da fonte do botão */
+    }
+
+    .image-section {
+        width: 100%; /* Ocupa 100% da largura */
+        margin-top: 10px; /* Reduz a margem superior */
     }
 
     .imagem-demo {
