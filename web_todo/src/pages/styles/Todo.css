@@ -8,6 +8,7 @@
     padding: 20px;
     background: linear-gradient(to bottom, #233541, #253C45, #264247, #2C5650);
     font-family: Arial, sans-serif;
+    overflow-y: hidden;
 }
 
 .container-center {
@@ -124,6 +125,7 @@ li {
 @media (max-width: 600px) {
     .container-center {
         padding: 15px;
+        width: 98%;
     }
 
     input {

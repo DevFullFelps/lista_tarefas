@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import './styles/Todo.css';
-import { database, ref, set, onValue, push } from '../firebase';
+import { database, ref, set, onValue, push, auth } from '../firebase';
+import { useNavigate } from 'react-router-dom';
 
 const Todo = () => {
     const [tasks, setTasks] = useState({}); // Estado para a lista de tarefas (agora um objeto)
     const [newTask, setNewTask] = useState(''); // Estado para o valor da nova tarefa
     const [editingTaskId, setEditingTaskId] = useState(null); // Estado para controlar qual tarefa está sendo editada
     const [editingText, setEditingText] = useState(''); // Estado para o texto da tarefa em edição
+    const navigate = useNavigate(); // Hook para navegação
 
     // Referência para o banco de dados
     const tasksRef = ref(database, 'tasks');
 
     // Carregar tarefas do Firebase quando a página é carregada
     useEffect(() => {
+        const user = auth.currentUser; // Verifica se o usuário está autenticado
+        if (!user) {
+            navigate('/auth'); // Redireciona para a página de autenticação se o usuário não estiver logado
+        }
+
         onValue(tasksRef, (snapshot) => {
             const data = snapshot.val();
             if (data) {
@@ -21,7 +28,7 @@ const Todo = () => {
                 setTasks({});
             }
         });
-    }, []); 
+    }, [navigate, tasksRef]);
 
     // Função para adicionar uma nova tarefa
     const addTask = () => {

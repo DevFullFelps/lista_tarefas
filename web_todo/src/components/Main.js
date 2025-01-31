@@ -10,7 +10,7 @@ const Main = () => {
                     <p>Mantenha suas tarefas organizadas e produtivas em um só lugar!</p>
                     <p>Uma lista simples e eficaz para acompanhar suas atividades diárias.</p>
                     <p>Crie, edite e conclua tarefas de forma prática e rápida!</p>
-                    <Link to="/todo" className="button-create">Crie sua Lista</Link> 
+                    <Link to="/auth" className="button-create">Crie sua Lista</Link> 
                 </div>
                 <div className="image-section">
                     <img src="./img/fundo.PNG" alt="Imagem-tela" className="imagem-demo" />

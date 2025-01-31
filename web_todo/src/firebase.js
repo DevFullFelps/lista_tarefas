@@ -1,11 +1,12 @@
 // firebase.js
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, set, onValue, push } from "firebase/database"; // Adicione 'push' aqui
+import { getDatabase, ref, set, onValue, push } from "firebase/database";
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth"; // Importe o módulo de autenticação
 
 const firebaseConfig = {
     apiKey: "AIzaSyA2sm-XR_OgPY_SRWr0a5hhlUcovM0ZFDE",
     authDomain: "bd-td-list.firebaseapp.com",
-    databaseURL: "https://bd-td-list-default-rtdb.firebaseio.com", // Adicione a URL do Realtime Database
+    databaseURL: "https://bd-td-list-default-rtdb.firebaseio.com",
     projectId: "bd-td-list",
     storageBucket: "bd-td-list.firebasestorage.app",
     messagingSenderId: "419707199929",
@@ -19,5 +20,9 @@ const app = initializeApp(firebaseConfig);
 // Inicializa o Realtime Database
 const database = getDatabase(app);
 
+// Inicializa o módulo de autenticação
+const auth = getAuth(app); // Inicializa o auth
+const googleProvider = new GoogleAuthProvider(); // Provedor de autenticação do Google
+
 // Exporta as funções e variáveis necessárias
-export { database, ref, set, onValue, push }; // Adicione 'push' aqui
+export { database, ref, set, onValue, push, auth, googleProvider, signInWithPopup };
