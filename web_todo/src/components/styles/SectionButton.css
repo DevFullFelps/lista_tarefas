@@ -4,7 +4,7 @@
     padding: 40px 0px;
 }
 
-.button-create{
+.button-create {
     border-radius: 30px;
     padding: 10px;
     background-color: #223240;
@@ -17,11 +17,12 @@
     box-shadow: 1px 2px 7px black;
 }
 
-.button-create:hover{
-    font-size: 20px;
+.button-create:hover {
     color: #93D94E;
     background-color: #223240;
+    transform: scale(1.1); /* Aumenta o botão sem afetar o layout */
 }
+
 @media (max-width: 768px) {
     .content {
         flex-direction: column;

@@ -1,7 +1,6 @@
-// firebase.js
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, set, onValue, push } from "firebase/database";
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth"; // Importe o módulo de autenticação
+import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth"; // Importe a função signOut
 
 const firebaseConfig = {
     apiKey: "AIzaSyA2sm-XR_OgPY_SRWr0a5hhlUcovM0ZFDE",
@@ -25,4 +24,4 @@ const auth = getAuth(app); // Inicializa o auth
 const googleProvider = new GoogleAuthProvider(); // Provedor de autenticação do Google
 
 // Exporta as funções e variáveis necessárias
-export { database, ref, set, onValue, push, auth, googleProvider, signInWithPopup };
+export { database, ref, set, onValue, push, auth, googleProvider, signInWithPopup, signOut }; // Agora inclui signOut

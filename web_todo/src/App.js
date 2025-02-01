@@ -4,9 +4,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import SectionButton from './components/SectionButton';
-import Auth from './Auth';
 import Todo from './pages/Todo';
 import ProtectedRoute from './ProtectedRoute'; 
+import Auth from './Auth'; // Certifique-se de importar o componente de login
 
 function App() {
   return (

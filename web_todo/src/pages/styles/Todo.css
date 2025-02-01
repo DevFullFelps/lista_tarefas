@@ -7,7 +7,6 @@
     min-height: 100vh;
     padding: 20px;
     background: linear-gradient(to bottom, #233541, #253C45, #264247, #2C5650);
-    font-family: Arial, sans-serif;
     overflow-y: hidden;
 }
 
@@ -39,6 +38,11 @@ input {
     border-radius: 8px;
     font-size: 16px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.botao-voltar{
+    margin-bottom: 10px;
+    background-color: rgba(17, 109, 112, 0.616);
 }
 
 button {
@@ -122,7 +126,7 @@ li {
 }
 
 /* Responsividade */
-@media (max-width: 600px) {
+@media (max-width: 680px) {
     .container-center {
         padding: 15px;
         width: 98%;
@@ -146,6 +150,33 @@ li {
     }
 }
 
+@media (max-width: 540px) {
+    .task-content {
+        display: flex;
+        flex-direction: column; /* Torna os elementos em coluna */
+        width: 100%;
+    }
+
+    .task-text {
+        font-size: 14px; /* Ajusta o tamanho da tarefa */
+        margin-bottom: 10px; /* Dá um espaçamento entre o texto da tarefa e os botões */
+    }
+
+    .task-actions {
+        display: flex;
+        justify-content: space-between; /* Alinha os botões em linha */
+        gap: 8px; /* Espaço entre os botões */
+    }
+
+    .task-actions button {
+        padding: 8px; /* Ajusta o tamanho dos botões */
+        font-size: 14px; /* Ajuste o tamanho da fonte dos botões */
+    }
+
+    .task-timestamp {
+        font-size: 12px; /* Ajusta o tamanho do timestamp */
+    }
+}
 @media (max-width: 400px) {
     h3 {
         font-size: 20px;

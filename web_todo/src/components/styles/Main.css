@@ -1,14 +1,18 @@
-/* Define a área principal */
+
 .main-container {
     background: linear-gradient(to bottom, #60BF81, #93D94E);
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: calc(75vh - 100px);
-    padding: 20px 10px; /* Adicionado padding para telas pequenas */
+    padding: 20px 10px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
 }
 
-/* Área interna do conteúdo */
+
 .content {
     display: flex;
     align-items: center;
@@ -16,12 +20,11 @@
     max-width: 1000px;
     width: 90%;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.15); /* Fundo sutil */
+    background: rgba(255, 255, 255, 0.15); 
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Seção de texto */
 .text-section {
     flex: 1;
     text-align: left;
